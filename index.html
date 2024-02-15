@@ -3,20 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practica 1</title>
+    <title>Practica 3</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
     <div class="campos">
-        <h1>Practica 1</h1>
+        <h1>Practica 3</h1>
         <form id="miFormulario" method="post">
-            <input type="text" id="miTexto" required>
-            <button type="button" onclick="imprimir()">Imprimir</button>
-            <button type="button" onclick="borrar()">Borrar</button>
-            <button type="button" onclick="aspecto()">Aspecto</button>
-        
+            <label for="miUsuario">Usuario:</label>
+            <input type="text" id="miUsuario" required>
+            <label for="miPassword">Contraseña:</label>
+            <input type="password" id="miPassword" required>
+            <button type="button" onclick="Login()">Login</button>
+            <button type="button" onclick="Registrar()">Registrar</button>
         </form>
+        <div id="mensajeLogin-Registro" class="mensaje"></div>
     </div>
     
     <script src="funcion.js"></script>

@@ -27,6 +27,11 @@ body {
     box-sizing: border-box;
 }
 
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
 form input{
     margin-bottom: 10px;
     width: 100%;
@@ -44,9 +49,22 @@ form button{
     padding: 0 10px;
     height: 40px;
     font-size: 16px;
-    background: lemonchiffon;
+    background: rgb(182, 158, 243);
     outline: none;
+    border-radius: 20px; 
+    border: none; 
 }
+
+.mensaje {
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: #dff0d8;
+    color: #3c763d;
+    border: 1px solid #d6e9c6;
+    border-radius: 5px;
+}
+
 
 footer {
     text-align: center;
