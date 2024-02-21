@@ -3,29 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practica 3</title>
-    <link rel="stylesheet" href="estilos.css">
+    <title>Practica 4</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
 </head>
 <body>
+    <ion-header>
+    <ion-toolbar>
+    <ion-title>Presupuesto</ion-title>
+    </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <h1>Content</h1>
+      <ion-list>
+        <ion-item>
+            <ion-input label="Articulo" id="articulo"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-input label="Monto" id="Monto"></ion-input>
+        </ion-item>
+    </ion-list>
+    <ion-button onclick="agregar()">Agregar</ion-button> 
+    <div id="Lista">
 
-    <div class="campos">
-        <h1>Practica 3</h1>
-        <form id="miFormulario" method="post">
-            <label for="miUsuario">Usuario:</label>
-            <input type="text" id="miUsuario" required>
-            <label for="miPassword">Contraseña:</label>
-            <input type="password" id="miPassword" required>
-            <button type="button" onclick="Login()">Login</button>
-            <button type="button" onclick="Registrar()">Registrar</button>
-        </form>
-        <div id="mensajeLogin-Registro" class="mensaje"></div>
     </div>
-    
-    <script src="funcion.js"></script>
+    </ion-content>
 
-    <footer>
-        <p>Hecho por Jose Luis Calderon Galarza - 2132939</p>
-    </footer>
+
+
+    <script src="script.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
 
 </body>
 </html>
+
