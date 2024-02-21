@@ -1,23 +1,13 @@
-function Login() {
-    var usuario = document.getElementById("miUsuario").value;
-    var password = document.getElementById("miPassword").value;
-    var mensaje = document.getElementById("mensajeLogin-Registro");
-    
-    if (usuario.trim() !== "" && password.trim() !== "") {
-        mensaje.innerText = "Login correcto " + usuario;
-    } else {
-        mensaje.innerText = "Por favor, ingrese un usuario y password válido.";
-    }
-}
+var articulo = "";
+var monto = 0;
+var total = 0;
 
-function Registrar() {
-    var usuario = document.getElementById("miUsuario").value;
-    var password = document.getElementById("miPassword").value;
-    var mensaje = document.getElementById("mensajeLogin-Registro");
+
+
+function agregar(){
+    articulo=document.getElementById("articulo").value;
+    monto=document.getElementById("monto").value;
     
-    if (usuario.trim() !== "" && password.trim() !== "") {
-        mensaje.innerText = "Registro correcto " + usuario;
-    } else {
-        mensaje.innerText = "Por favor, ingrese un usuario y password válido para el registro.";
-    }
+    let elementoTicket = document.createElement("p");
+    elementoTicket.innerHTML = articulo + "...." + monto;
 }
