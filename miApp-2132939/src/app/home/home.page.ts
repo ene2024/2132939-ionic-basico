@@ -9,4 +9,5 @@ export class HomePage {
 
   constructor() {}
 
+  alumnos: string[] = ["Carlos", "Ximena", "Alberto", "Eduardo", "Barbara", "Georgina", "Kevin"];
 }
