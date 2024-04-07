@@ -1,0 +1,8 @@
+<ion-button (click)="setOpen(true)">Delete</ion-button>
+<ion-action-sheet
+  [isOpen]="isActionSheetOpen"
+  header="Actions"
+  [buttons]="actionSheetButtons"
+  (didDismiss)="setOpen(false)"
+></ion-action-sheet>
+

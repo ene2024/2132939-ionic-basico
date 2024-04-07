@@ -6,6 +6,7 @@ import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
 import { ListaAlumnosComponent } from '../lista-alumnos/lista-alumnos.component';
+import { BottomDeleteComponent } from '../bottom-delete/bottom-delete.component';
 
 @NgModule({
   imports: [
@@ -15,6 +16,7 @@ import { ListaAlumnosComponent } from '../lista-alumnos/lista-alumnos.component'
     HomePageRoutingModule
   ],
   declarations: [HomePage,
-    ListaAlumnosComponent]
+    ListaAlumnosComponent,
+    BottomDeleteComponent]
 })
 export class HomePageModule {}

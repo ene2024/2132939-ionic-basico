@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Practica 7
+      Practica 8
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,7 +9,7 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Practica 7</ion-title>
+      <ion-title size="large">Practica 8</ion-title>
     </ion-toolbar>
   </ion-header>
 
@@ -22,14 +22,47 @@
       </ion-toolbar>
     </ion-header>
     
-      <ion-list>
+      <!--<ion-list>
         <ion-item *ngFor="let alumno of alumnos">
           {{ alumno }}
         </ion-item>
       </ion-list>
 
       <h1>Lista de Alumnos</h1>
-      <app-lista-alumnos></app-lista-alumnos>
+      <app-lista-alumnos></app-lista-alumnos>--->
     
+      <ion-list>
+    
+        <ion-list>
+          <ion-item-sliding *ngFor="let alumno of alumnos">
+            <ion-item-options side="start">
+              <ion-item-option>
+                <ion-icon slot="icon-only" name="heart"></ion-icon>
+              </ion-item-option>
+              <ion-item-option color="danger">
+                <app-bottom-delete></app-bottom-delete> 
+              </ion-item-option>
+            </ion-item-options>
+        
+            <ion-item>
+              {{ alumno }}
+            </ion-item>
+        
+            <ion-item-options side="end">
+              <ion-item-option>
+                <ion-icon slot="icon-only" name="heart"></ion-icon>
+              </ion-item-option>
+              <ion-item-option color="danger">
+                <app-bottom-delete></app-bottom-delete> 
+              </ion-item-option>
+            </ion-item-options>
+          </ion-item-sliding>
+        </ion-list>
+        
+
+
+      </ion-list>
+      
+
   </div>
 </ion-content>
