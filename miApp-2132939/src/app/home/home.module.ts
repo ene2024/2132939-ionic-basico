@@ -7,7 +7,7 @@ import { HomePage } from './home.page';
 import { HomePageRoutingModule } from './home-routing.module';
 import { ListaAlumnosComponent } from '../lista-alumnos/lista-alumnos.component';
 import { BottomDeleteComponent } from '../bottom-delete/bottom-delete.component';
-import { ProductosComponent } from '../productos/productos.component';
+
 
 @NgModule({
   imports: [
@@ -18,6 +18,6 @@ import { ProductosComponent } from '../productos/productos.component';
   ],
   declarations: [HomePage,
     ListaAlumnosComponent,
-    BottomDeleteComponent, ProductosComponent]
+    BottomDeleteComponent,]
 })
 export class HomePageModule {}

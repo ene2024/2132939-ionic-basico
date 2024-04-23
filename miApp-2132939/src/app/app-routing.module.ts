@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-
+import { ProductosComponent } from './productos/productos.component'; // Importa el componente ProductoComponent
+import { ProductoDetalleComponent } from './producto-detalle/producto-detalle.component'; // Importa el componente ProductoDetalleComponent
 const routes: Routes = [
   {
     path: 'home',
@@ -8,9 +9,18 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: '/productos',
     pathMatch: 'full'
   },
+  {
+    path: 'productos',
+    component: ProductosComponent
+  },
+  {
+    path: 'producto/:id',
+    component: ProductoDetalleComponent
+ },
+  
 ];
 
 @NgModule({

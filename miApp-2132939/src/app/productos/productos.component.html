@@ -1,3 +1,25 @@
-<p>
-  productos works!
-</p>
+<!--<div *ngFor="let producto of productos">
+  <h2><!--{{ producto.titulo }}--Titulo</h2>
+  <img [src]="" alt="Imagen del producto">
+</div> 
+
+<ion-card *ngFor="let producto of productos" [routerLink]="['/producto', producto.id]">
+  <ion-card-title>{{producto.title}}</ion-card-title>
+  <ion-card-content>
+    <img width="250px" height="150px" src="{{producto.image}}" alt="">
+  </ion-card-content>
+</ion-card> -->
+
+<ion-card *ngFor="let producto of productos" [routerLink]="['/producto', producto.id]">
+  <ion-card-header>
+    <ion-card-title>{{ producto.title }}</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    <ion-img [src]="producto.image" alt="Imagen del producto"></ion-img>
+    <p>Precio: {{ producto.price }}</p>
+    <p>Categoría: {{ producto.category }}</p>
+    <p>Descripción: {{ producto.description }}</p>
+  </ion-card-content>
+</ion-card>
+
