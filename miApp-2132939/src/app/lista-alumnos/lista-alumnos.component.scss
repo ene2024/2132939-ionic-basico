@@ -1,0 +1,24 @@
+/* Estilos para el formulario */
+form {
+    width: 100%;
+  }
+  
+  /* Estilos para el campo de entrada */
+  ion-item {
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para el botón */
+  ion-button {
+    margin-top: 20px;
+  }
+  
+  /* Estilos basados en los estados del formulario */
+  .ng-invalid.ng-touched {
+    border-color: red; /* Cambiar el borde a rojo cuando el campo sea inválido y se haya tocado */
+  }
+  
+  .ng-valid.ng-touched {
+    border-color: green; /* Cambiar el borde a verde cuando el campo sea válido y se haya tocado */
+  }
+  
