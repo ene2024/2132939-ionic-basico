@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { ListaAlumnosComponent } from './lista-alumnos/lista-alumnos.component';
 import { ProductosComponent } from './productos/productos.component'; 
 import { ProductoDetalleComponent } from './producto-detalle/producto-detalle.component'; 
+import { CamaraComponent } from './camara/camara.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -16,6 +17,7 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     ListaAlumnosComponent,
     ProductosComponent,
+    CamaraComponent,
     ProductoDetalleComponent
   ],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule, FormsModule],
