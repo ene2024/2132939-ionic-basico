@@ -4,6 +4,7 @@ import { Camera, CameraResultType, CameraSource, Photo } from '@capacitor/camera
 import { Filesystem, Directory } from '@capacitor/filesystem';
 
 import { Preferences } from '@capacitor/preferences';
+import { Foto } from './foto.model';
 //funcion para tomar foto  
 
 @Injectable({
@@ -11,6 +12,8 @@ import { Preferences } from '@capacitor/preferences';
 })
 
 export class FotoServiceService {
+
+  public fotos: Foto[] = [];
 
   public async addNewToGallery() {   
 
@@ -23,6 +26,11 @@ export class FotoServiceService {
     source: CameraSource.Camera,      quality: 100    
     
     });
+
+    this.fotos.unshift({
+      filepath: '',
+      webViewPath: capturedPhoto.webPath
+    })
   }
 
   constructor() { }
