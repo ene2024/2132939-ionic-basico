@@ -1,7 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">miApp-2132939</string>
-    <string name="title_activity_main">miApp-2132939</string>
-    <string name="package_name">com.example.app</string>
-    <string name="custom_url_scheme">com.example.app</string>
+  <string name="app_name">miApp-2132939</string>
+  <string name="title_activity_main">miApp-2132939</string>
+  <string name="package_name">com.example.app</string>
+  <string name="custom_url_scheme">com.example.app</string>
+  <string name="image_description">Descripción de la imagen</string>
+
+
 </resources>
